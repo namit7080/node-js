@@ -1,0 +1,34 @@
+#my-header{
+    display: inline-block;
+    color: orange;
+}
+
+header{
+    justify-content: center;
+    position: relative;
+    top: 2%;
+    /* background-color: orange; */
+    width: 100%;
+    text-align: center;
+}
+
+ul li{
+    /* background-color: orangered; */
+    display: inline-block;
+    margin-right: 5%;
+    text-decoration: underline;
+    
+    
+}
+ul li a{
+    color: orange;
+}
+ul div{
+    position: relative;
+    width: 40%;
+    left: 60%;
+    /* background-color: palegreen; */
+    margin-top: -2%;
+    
+}
+

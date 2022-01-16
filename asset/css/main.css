@@ -1,0 +1,14 @@
+#main{
+    /* background-color: yellow; */
+    position: relative;
+    top:15%;
+}
+#main p,h1{
+    display: block;
+    color: white;
+    margin-top: 2%;
+}
+
+
+
+

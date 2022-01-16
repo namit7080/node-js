@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/header.css">
+<header>
+
+    <ul id="ul">
+
+        <h1 id="my-header">Profile</h1>
+        <div>
+        <% if(locals.user){ %>
+          
+              <li>
+                <a href="/user/profile">
+                    <%=user.name%>
+                </a>
+              </li>
+           
+
+              <li>
+                <a href="/sing-out">
+                    Sing-out
+                </a>
+              </li>
+         </div>
+        
+        <%} else{ %>
+            <div>
+            
+              <li id="inner">
+                <a href="/log-in">
+                    Log-In
+                </a>
+              </li>
+            
+            
+               <li id="outter">
+                 <a href="/singup">
+                    Sing-in
+                 </a>
+               </li>
+           
+            </div> 
+        <%}%>    
+    </ul>
+</header>

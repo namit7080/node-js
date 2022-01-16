@@ -1,0 +1,11 @@
+body{
+  
+   margin: 0px;
+   text-align: center;
+   color: rgb(16, 6, 143);
+   background-color: rgb(49, 49, 49);
+  
+}
+body p{
+   color: bisque;
+}

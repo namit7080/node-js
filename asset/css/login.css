@@ -1,0 +1,50 @@
+#login{
+    position: relative;
+    width: 50%;
+    left: 25%;
+    border-radius: 1rem;
+    background-image: linear-gradient(rgba(32, 32, 32, 0.87),rgb(75, 75, 75),rgb(82, 82, 82));
+}
+#login :hover{
+    border-color: rgb(250, 173, 31);
+    background-color: orange;
+}
+#head{
+    
+    position: relative;
+    margin-top: 3%;
+    left: 40%;
+    width: 20%;
+    font-size: x-large;
+    background-color: orange;
+
+}
+#form input,button{
+    border-radius: 1rem;
+     background-color: rgb(22, 22, 22);
+     color: orange;
+     padding-left: 2%;
+     margin-top: 6%;
+     display: inline-block;
+    
+}
+#form input:hover{
+     border-color: rgb(30, 255, 0);
+}
+#form input{
+    width: 25%;
+    height: 4%;
+
+
+}
+#singup{
+    position: relative;
+    width: 10%;
+    background-color: orange;
+    left: 45%;
+    margin-bottom: 5%;
+
+
+
+
+}
