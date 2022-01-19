@@ -13,5 +13,50 @@
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi odit provident, quibusdam asperiores ad repellat voluptatibus consequuntur eaque rerum, consectetur, debitis esse assumenda et. Iure, autem! Voluptate cupiditate libero sed fugiat omnis eveniet aut molestias doloremque porro numquam asperiores, dicta cumque, debitis molestiae vero optio eum accusantium ut, consequatur minima.</p>
     </div>
 
+     <% if(locals.user){ %>
+    <section id="feed-post">
+         <h3>Post</h3>
+         <form action="/creation/mypost" method="POST">
+           <textarea name="text" id="textarea" cols="30" rows="4"></textarea>
+           <input type="submit" value="Post">
+
+         </form>
+   </section>
+   <%}%>
+   <% for (let i of post){ %>
+    <div class="post">
+      <div class="username">
+         @User - <%=i.user.name%>
+      </div>
+      <div class="userpost">
+        <%= i.content %>
+      </div>
+    </div>
+     <% for(let comment of i.comment){%>
+    <div id="comment">
+       <p>@ User(<%=comment.user.name%>)
+         <%=comment.comment%>
+       </p>
+    </div>
+    <%}%>
+    <% if(locals.user) { %>
+      <section id="mycomment">
+        <form action="/comment/create" method="POST">
+          <textarea name="text" id="textarea" cols="30" rows="2" placeholder="Add Comment Here"></textarea>
+          <input type="hidden" name="post" value="<%=i._id%>">
+          <input type="submit" value="Comment">
+        </form>
+      </section>
+  <%}%>
+
+
+
+
+
+
+
+
+   <%}%> 
+
 </body>
 </html>

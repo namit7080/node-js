@@ -32,6 +32,13 @@ router.post('/log-in-user',passport.authenticate(
 
 router.get('/sing-out',home_controller.destroysession);
 
+
+
+
+router.use('/creation',require('./post'));
+
+router.use('/comment',require('./comment'));
+
 // here route is use another router 
 //router.use('/user',require('./user'));
 

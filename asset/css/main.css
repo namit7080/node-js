@@ -1,12 +1,59 @@
+
+
 #main{
     /* background-color: yellow; */
-    position: relative;
+    /* position: relative; */
     top:15%;
 }
 #main p,h1{
     display: block;
     color: white;
     margin-top: 2%;
+}
+#textarea{
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    padding: 1%;
+}
+.post{
+    position: relative;
+    margin-top: 2%;  
+   height: 10%;
+   width: 50%;
+   background-color: brown;
+   margin-left: 25%;
+
+}
+.username{
+   width: 100%;
+   height: 20%;
+   background-color: khaki;
+
+}
+.userpost{
+    width: 100%;
+    height: 80%;
+    overflow: scroll;
+}
+
+
+#mycomment{
+     
+    overflow: scroll;
+    width: 50%;
+    margin-left: 25%;
+    background-color: lawngreen;
+   
+
+
+}
+
+#comment{
+    width: 50%;
+    margin-left: 25%;
+    background-color: rgb(74, 23, 241);
+
 }
 
 

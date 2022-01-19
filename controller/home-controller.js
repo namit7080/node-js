@@ -1,7 +1,25 @@
+const Post= require('../models/post');
+
 module.exports.home=function(req, res){
-     // res.end('<h1>Hello User How are you <h1>');
-     res.render('main');
-     return;
+
+     Post.find({}).
+     populate('user').
+     populate({
+          path:'comment',
+          populate:{
+               path:'user'
+          }
+     }).
+     exec(function (err,post) {
+         return res.render('main',{
+              post:post
+         });
+
+
+     });
+          
+     
+    
 };
 module.exports.login=function(req,res){
      if(req.isAuthenticated()){

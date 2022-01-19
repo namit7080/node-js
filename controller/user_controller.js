@@ -94,6 +94,6 @@ module.exports.create=function(req,res){
 
 module.exports.createSession= function(req,res){
      console.log("Create Session");
-    return res.redirect('/user/profile');
+    return res.redirect('back');
       
 }
